@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         web.webViewClient = WebViewClient()
 
         web.apply {
+
             settings.javaScriptEnabled=true
             settings.safeBrowsingEnabled=true
             loadUrl("http://sixpcoder.000webhostapp.com/")
