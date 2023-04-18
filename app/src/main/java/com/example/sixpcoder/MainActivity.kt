@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.hide()
+
         val web=findViewById<WebView>(R.id.webView)
         webViewSetUp(web)
 
@@ -28,8 +31,6 @@ class MainActivity : AppCompatActivity() {
             settings.javaScriptEnabled=true
             settings.safeBrowsingEnabled=true
             loadUrl("http://sixpcoder.000webhostapp.com/")
-
-
 
 
         }
